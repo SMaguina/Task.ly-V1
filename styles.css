@@ -1,0 +1,124 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+/* apply a natural box layout model to all elements */
+* {
+	font-weight: 200;
+	}
+
+
+.navbar-header {
+	float: right;
+}
+
+
+.jumbotron { background-image: url("img/homepage2.jpg"); }
+.jumbotron h1{ color: white; text-align: center; }
+.jumbotron strong {color: white; }
+.jumbotron p { color: white; }
+
+
+body {
+	position: relative;
+	padding-top: 3.571em;
+	padding-bottom: 1.429em;
+	background-color: #ffffff;
+	color: #000000;
+	font-family: 'Open Sans', sans-serif;
+
+	}
+
+h1 { 
+	text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 3.929em;
+    padding-top: 0.5em;
+
+}
+ 
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.071em;
+    line-height: 1.429em;
+}
+
+address {
+	color: #ffffff;
+}
+
+.col-md-4 {padding-top: 2em}
+
+
+.content-box { padding-top: 0.357em; margin-top: 2.143em; margin bottom: 2.143em; background-image: url("img/compass.jpeg"); 
+background-position: 90% 40%; }
+
+
+.col-centered{
+	float: none;
+	margin: 0 auto;
+}
+
+.content-box h1{ text-align: center; font-size: 2.5em; color: white; }
+.content-box section{ text-align: center; font-size: 1.143em; color: white;}
+.content-box p{ text-align: center; margin-top: 0.714em; padding: 0.714em; color: white; } 
+
+
+
+@font-face {
+	font-family: GothamRoundBook;
+	src: url(fonts/GothamRnd-Book.otf)
+
+}
+
+
+.panel-body {color: black; font-family: 'Open Sans', sans-serif;}
+
+
+.carousel-caption { color: white; padding-bottom: 2em }
+
+.carousel-inner h1{
+	position: relative;
+	top: -250px;
+	right: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 55px;
+    }
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+#aboutpage { padding: 2.5em; margin: 1em; width: auto;}
+
+.lead { padding-top: 0.5em; }
+
+
+
+#contact{
+		background-image: url("img/contactbackground1.jpg");
+		background-attachment: fixed;
+		background-size: cover;
+		color: white;
+		padding:1em;
+		padding-bottom: 2em;
+		height: 32.143em;
+		background-position: 50% 20%; 
+}
+
+.overlay {background-image: url("img/grid.png");
+		  background-color: rgba(108, 88, 88, 0.6);
+		  height: 100%;
+		  opacity: 0.8;
+		  width: 100%;
+		  overflow: hidden;
+		  top: 0; 
+		  left: 0;
+		  bottom: 0;
+		  right: 0;
+		  z-index: -1;
+		  }
+
+@media (max-width: 480px) {.carousel-inner h1}
+@media (min-width: 768px) and (max-width: 979px) {.carousel-inner h1}
+@media (min-width: 1200px) {.carousel-inner h1}
+
