@@ -31,7 +31,6 @@ h1 {
     font-family: 'Raleway', sans-serif;
     font-size: 3.929em;
     padding-top: 0.5em;
-
 }
  
 p {
@@ -42,6 +41,8 @@ p {
 
 address {
 	color: #ffffff;
+	float: right;
+	padding: 2em;
 }
 
 iframe { padding: 0;
@@ -91,7 +92,14 @@ background-position: 90% 40%; }
   height: auto;
 }
 
-#aboutpage { padding: 2.5em; margin: 1em; width: auto;}
+#aboutpage { padding: 2.5em; 
+			 margin: 1em; 
+			 width: auto;
+			 display: block; }
+
+#faq { color: black;
+	   padding: 1em;
+	    }
 
 .lead { padding-top: 0.5em; }
 
@@ -104,10 +112,16 @@ background-position: 90% 40%; }
 		color: white;
 		padding:1em;
 		padding-bottom: 2em;
-		height: 32.143em;
+		height: 34.143em;
 		background-position: 50% 20%; 
 }
 
+.form-control { width: 25%; 
+				}
+
+form { display: block; }
+
+.form-group { color: black; }
 
 .twitter {float: left; }
 
