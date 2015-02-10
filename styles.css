@@ -9,7 +9,6 @@
 	float: right;
 }
 
-
 .jumbotron { background-image: url("img/homepage2.jpg"); }
 .jumbotron h1{ color: white; text-align: center; }
 .jumbotron strong {color: white; }
@@ -30,7 +29,7 @@ h1 {
 	text-align: center;
     font-family: 'Raleway', sans-serif;
     font-size: 3.929em;
-    padding-top: 0.5em;
+    padding-top: 1em;
 }
  
 p {
@@ -43,6 +42,7 @@ address {
 	color: #ffffff;
 	float: right;
 	padding: 2em;
+	text-align: center;
 }
 
 iframe { padding: 0;
@@ -57,7 +57,7 @@ background-position: 90% 40%; }
 
 .col-centered{
 	float: none;
-	margin: 0 auto;
+	margin: auto;
 }
 
 .content-box h1{ text-align: center; font-size: 2.5em; color: white; }
@@ -110,7 +110,7 @@ background-position: 90% 40%; }
 		background-attachment: fixed;
 		background-size: cover;
 		color: white;
-		padding:1em;
+		padding: 1em;
 		padding-bottom: 2em;
 		height: 34.143em;
 		background-position: 50% 20%; 
