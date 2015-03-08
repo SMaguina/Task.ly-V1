@@ -18,7 +18,7 @@
 
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Raleway:100' rel='stylesheet' type='text/css'>
-    
+  
     <!-- Just for debugging purposes. Don't actually copy this line! -->
     <!--[if lt IE 9]><script src="../../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
 
@@ -98,13 +98,16 @@
         </div>
         <div class="col-md-4">
           <h2>Open Off Hours</h2>
-          <p>Is your normal ZA on holiday or off on the weekend? With ZTask on Demand, you can expect a turnaround time 24/7, any time and day of the week.</p>
+          <p>Is your normal ZA on holiday or off on the weekend? With ZTask on Demand, you can expect a speedy turnaround response, any time and <a href="#" title="6 am - 9 pm EST" data-placement="bottom" id="mytooltip">day of the week.</a></p>
           <br>
           <p>Utilize Outside Normal Working Hours: <em>Weekends, Evenings, Holidays</em></p>
        </div>
         <div class="col-md-4">
           <h2>Early Access App</h2>
           <p>In exchange for helping test our private app in it's earliest version, you'll be the first to know of new features we'll be releasing soon. All while taking your feedback and being in the front seat.</p>
+          <p>
+            <a class="btn btn-default" href="#contact" title="Limited Time Only" data-placement="bottom" data-toggle="tooltip" role="button">Request Invite &rsaquo;&rsaquo;</a>
+          </p>
         </div>
       </div>
     </div>
@@ -383,8 +386,9 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
     <script src="js/jquery.media.js" type="text/javascript"></script>
-    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+  
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript">
       var $root = $('html, body');
@@ -398,5 +402,12 @@
             return false;
         });
     </script>
+    <script>
+     $(function () {
+      $('#mytooltip').tooltip();
+      $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+
   </body>
 </html>
