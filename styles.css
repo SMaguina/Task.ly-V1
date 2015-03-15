@@ -1,142 +1,210 @@
-/* Move down content because we have a fixed navbar that is 50px tall */
-/* apply a natural box layout model to all elements */
+/* Font weight belongs on top */
 * {
-	font-weight: 200;
-	}
-
-
-.navbar-header {
-	float: right;
+   font-weight: 200;
 }
 
-.jumbotron { background-image: url("img/homepage2.jpg"); }
-.jumbotron h1{ color: white; text-align: center; }
-.jumbotron strong {color: white; }
-.jumbotron p { color: white; }
+/* Font family */
+@font-face {
+			font-family: GothamRoundBook;
+			src: url(fonts/GothamRnd-Book.otf);
+}
 
+/* Navigation Bar */
+.navbar-header {
+			    float: right;
+}
 
-body {
-	position: relative;
-	padding-top: 3.571em;
-	padding-bottom: 1.429em;
-	background-color: #ffffff;
-	color: #000000;
-	font-family: 'Open Sans', sans-serif;
+/* Responsive image feature */
+.img-responsive {
+  	 			 display: block;
+  				 max-width: 100%;
+  				 height: auto;
+}
 
-	}
+/* Jumbotron is for default heading on linked pages */
+.jumbotron { 
+			background-image: url("img/homepage2.jpg"); 
+}
 
-h1 { 
+.jumbotron h1 { 
+			   color: white; 
+			   text-align: center; 
+}
+
+.jumbotron strong {
+				   color: white; 
+}
+
+.jumbotron p { 
+			  color: white; 
+}
+
+/* First line of editable text on hero image background */
+.brandname-text { 
+				 text-align: center;
+    			 font-family: 'Raleway', sans-serif;
+    			 font-size: 3.929em;
+    			 padding-top: 1em;
+}
+
+/* Heading of each section i.e About, Contact, FAQ */
+h1 {
 	text-align: center;
     font-family: 'Raleway', sans-serif;
     font-size: 3.929em;
     padding-top: 1em;
 }
+
+/* Positiong of hero image background and h1 */
+.carousel-caption { 
+				   color: white; 
+				   padding-bottom: 2em;
+}
+
+.carousel-inner h1 {
+					position: relative;
+					top: -250px;
+					right: 10px;
+    				font-family: 'Raleway', sans-serif;
+    				font-size: 55px;
+}
+
+/* Body and paragraph text */
+body {
+	  position: relative;
+	  padding-top: 3.571em;
+	  padding-bottom: 1.429em;
+	  background-color: #ffffff;
+	  color: #000000;
+	  font-family: 'Open Sans', sans-serif;
+}
  
 p {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.071em;
-    line-height: 1.429em;
+   font-family: 'Open Sans', sans-serif;
+   font-size: 1.071em;
+   line-height: 1.429em;
 }
 
-address {
-	color: #ffffff;
-	float: right;
-	padding: 2em;
-	text-align: center;
+/* Columns of the 3 description boxes */ 
+.col-md-4 {
+		   padding-top: 2em;
 }
 
-iframe { padding: 0;
-		 margin: auto; }
+/* Download box area */
+.download-box { 
+			   padding-top: 0.357em; 
+			   margin-top: 2.143em; 
+			   margin bottom: 2.143em; 
+			   background-image: url("img/compass.jpeg"); 
+			   background-position: 90% 40%; 
+}
 
-h4 {
-	color: black;
-	}
+.col-centered {
+			   float: none;
+	       	   margin: auto;
+}
+
+.download-box h1 { 
+				 text-align: center; 
+				 font-size: 2.5em; 
+				 color: white; 
+}
+
+.download-box section { 
+					  text-align: center; 
+					  font-size: 1.143em; 
+					  color: white;
+}
+
+.download-box p { 
+				text-align: center; 
+				margin-top: 0.714em; 
+				padding: 0.714em; 
+				color: white; 
+}
+
+/* Modal window positioning */
+iframe { 
+		padding: 0;
+		margin: auto;
+}
 
 .modal-body {
-			height: 35.714em;
+			 height: 35.714em;
 }
 
 #modalframe {
-			padding: 0.714em;
-			width: 100%;
-			height: 100%;
+			 padding: 0.714em;
+			 width: 100%;
+			 height: 100%;
 }
 
-.col-md-4 {padding-top: 2em}
+/* Text color inside modal window */
+h4 {
+	color: black;
+} 
 
-
-.content-box { padding-top: 0.357em; margin-top: 2.143em; margin bottom: 2.143em; background-image: url("img/compass.jpeg"); 
-background-position: 90% 40%; }
-
-
-.col-centered{
-	float: none;
-	margin: auto;
+/* About area begins */
+#aboutpage { 
+	        padding: 2.5em; 
+			margin: 1em; 
+			width: auto;
+			display: block; 
 }
 
-.content-box h1{ text-align: center; font-size: 2.5em; color: white; }
-.content-box section{ text-align: center; font-size: 1.143em; color: white;}
-.content-box p{ text-align: center; margin-top: 0.714em; padding: 0.714em; color: white; } 
-
-
-
-@font-face {
-	font-family: GothamRoundBook;
-	src: url(fonts/GothamRnd-Book.otf)
-
+/* About area text */
+.lead { 
+	   padding-top: 0.5em; 
 }
 
-
-.panel-body {color: black; font-family: 'Open Sans', sans-serif;}
-
-
-.carousel-caption { color: white; padding-bottom: 2em }
-
-.carousel-inner h1{
-	position: relative;
-	top: -250px;
-	right: 10px;
-    font-family: 'Raleway', sans-serif;
-    font-size: 55px;
-    }
-
-.img-responsive {
-  display: block;
-  max-width: 100%;
-  height: auto;
+/* Contact area begins */
+#contact {
+		  background-image: url("img/contactbackground1.jpg");
+		  background-attachment: fixed;
+		  background-size: cover;
+		  color: white;
+		  padding: 1em;
+		  padding-bottom: 2em;
+		  height: 34.143em;
+		  background-position: 50% 20%; 
 }
 
-#aboutpage { padding: 2.5em; 
-			 margin: 1em; 
-			 width: auto;
-			 display: block; }
-
-#faq { color: black;
-	   padding: 1em;
-	   margin: 2em;
-	    }
-
-.lead { padding-top: 0.5em; }
-
-
-
-#contact{
-		background-image: url("img/contactbackground1.jpg");
-		background-attachment: fixed;
-		background-size: cover;
-		color: white;
-		padding: 1em;
-		padding-bottom: 2em;
-		height: 34.143em;
-		background-position: 50% 20%; 
+/* Contact area text */
+address {
+		 color: #ffffff;
+		 float: right;
+		 padding: 2em;
+		 text-align: center;
 }
 
-.form-control { width: 25%; 
-				}
+/* FAQ area begins */
+#faq { 
+	  color: black;
+	  padding: 1em;
+	  margin: 2em;
+}
 
-form { display: block; }
+/* Column boxes for FAQ section */
+.panel-body {
+			 color: black; 
+			 font-family: 'Open Sans', sans-serif;
+}
 
-.form-group { color: black; }
+/* Form positioning begins */
+form { 
+	  display: block; 
+}
 
-.twitter {float: left; }
+.form-group { 
+			 color: black; 
+}
+
+.form-control { 
+			   width: 25%; 
+}
+
+/* Twitter icon positioning */
+.twitter { 
+		  float: left; 
+}
 
