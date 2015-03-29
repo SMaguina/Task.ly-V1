@@ -1,5 +1,13 @@
-$("#message").ready(function(){
-	$("#message").css("background-color", "pink");
+$("#message").on("keyup", function() {
+	console.log("keyup happened"); 
+	var charCount = $("#message").val().length;
+	console.log(charCount);
+	$("#char-count").html(charCount);
+	if(charCount > 50) {
+		$("#char-count").css("color", "red");	
+	} else {
+		$("#char-count").css("color", "black");
+	}
 }); 
 
 $("button").on("click", function(){
