@@ -177,19 +177,6 @@ address {
  text-align: center;
 }
 
-/* FAQ area begins */
-#faq { 
- color: black;
- padding: 1em;
- margin: 2em;
-}
-
-/* Column boxes for FAQ section */
-.panel-body {
- color: black; 
- font-family: 'Open Sans', sans-serif;
-}
-
 /* Form positioning begins */
 form { 
  display: block; 
@@ -201,6 +188,44 @@ form {
 
 .form-control { 
  width: 25%; 
+}
+
+/* FAQ area begins */
+#faq { 
+ color: black;
+ padding: 1em;
+ margin: 2em;
+}
+
+/* Zebra-striped table */
+table {
+ width: 100%;
+ padding-bottom: 2em;
+}
+
+table, td, th {
+ border: 1px solid black;
+}
+
+th {
+ height: 3.571em;
+ text-align: center;
+}
+
+td {
+ padding: .5em;
+ height: .5em;
+ text-align: center;
+}
+
+/* Column boxes for FAQ section */
+#accordion {
+ padding-top: 4em;
+}
+
+.panel-body {
+ color: black; 
+ font-family: 'Open Sans', sans-serif;
 }
 
 /* Twitter icon positioning */

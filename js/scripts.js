@@ -17,3 +17,12 @@ $("button").on("click", function(){
 	$("#visible-comment").html(comment);
 });
 
+$(function() {
+	var rows = $(".my-row");
+	console.log("row function");
+	for(var i=0; i<rows.length; ++i) {
+		if (i%2===0) {
+			$(rows[i]).css("background-color", "grey");
+		};
+	};
+});
