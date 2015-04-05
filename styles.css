@@ -218,6 +218,34 @@ td {
  text-align: center;
 }
 
+/* 4 blocks of photos */
+.image {
+ box-sizing: border-box;
+ border: 2px solid pink;
+ width: 200px;
+ height: 200px;
+ margin: 5px;
+ display: inline-block;
+ position: relative;
+}
+
+.info {
+ display: inline-block;
+ color: #fff;
+ font-family: Futura;
+ text-transform: uppercase;
+ font-weight: 700;
+ letter-spacing: 0.5em;
+ line-height: 1.6;
+ position: absolute;
+ top: 15%;
+ left: 22%;
+}
+
+.proj-title {
+ font-weight: 100;
+}
+
 /* Column boxes for FAQ section */
 #accordion {
  padding-top: 4em;
