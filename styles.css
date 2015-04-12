@@ -169,6 +169,15 @@ h4 {
  background-position: 50% 20%; 
 }
 
+/* Google Maps */
+#map-canvas {
+ height: 130px;
+ width: 240px;
+ padding: 2em;
+ float: right;
+ text-align: center;
+}
+
 /* Contact area text */
 address {
  color: #ffffff;
