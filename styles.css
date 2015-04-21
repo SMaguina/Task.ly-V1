@@ -39,6 +39,27 @@
  color: white; 
 }
 
+/* Video header */
+.header-container {
+ height: 0;
+ position: relative;
+ padding-bottom: 56.25%;
+ overflow: hidden;
+}
+
+.video-container {
+ position: absolute;
+ top: 0;
+ left: 0;
+ height: 100%;
+ width: 100%;
+}
+
+video {
+ position: absolute;
+ width: 100%;
+}
+
 /* First line of editable text on hero image background */
 .brandname-text { 
  text-align: center;
