@@ -5,16 +5,42 @@
 
 /* Font family */
 @font-face {
- font-family: 'Raleway';
- src: url(fonts/Raleway-ExtraLight.ttf) format('ttf');
+ font-family: 'Raleway-ExtraLight';
+ src: url('Raleway-ExtraLight.eot?') format('eot'), url('Raleway-ExtraLight.woff') format('woff'), url('Raleway-ExtraLight.ttf') format('truetype'), url('Raleway-ExtraLight.woff2') format('woff2'), url('Raleway-ExtraLight.svg') format('svg');
 }
 
 @font-face {
- font-family: 'OpenSans';
- src: url(fonts/OpenSans-Light.ttf) format('ttf');
- src: url(fonts/OpenSans-Regular.ttf) format('ttf');
- src: url(fonts/OpenSans-Bold.ttf) format('ttf');
- src: url(fonts/OpenSans-LightItalic.ttf) format('ttf');
+ font-family: 'OpenSans'; 
+ src: local(fonts/OpenSans-Regular.ttf) format('truetype');
+ src: local(fonts/OpenSans-Regular.eot) format('embedded-opentype');
+ src: local(fonts/OpenSans-Regular.woff) format('woff');
+ src: local(fonts/OpenSans-Regular.svg) format('svg');
+}
+
+@font-face {
+font-family: 'OpenSans-Light';
+src: local(fonts/OpenSans-Light.ttf) format('truetype');
+src: local(fonts/OpenSans-Light.eot) format('embedded-opentype');
+src: local(fonts/OpenSans-Light.woff) format('woff');
+src: local(fonts/OpenSans-Light.svg) format('svg');
+}
+
+@font-face {
+font-family: 'OpenSans-Bold';
+src: local(fonts/OpenSans-Bold.ttf) format('truetype');
+src: local(fonts/OpenSans-Bold.eot) format('embedded-opentype');
+src: local(fonts/OpenSans-Bold.woff) format('woff');
+src: local(fonts/OpenSans-Bold.svg) format('svg');
+font-weight: bold;
+}
+
+@font-face {
+font-family: 'OpenSans-LightItalic';
+src: local(fonts/OpenSans-LightItalic.ttf) format('truetype');
+src: local(fonts/OpenSans-LightItalic.eot) format('embedded-opentype');
+src: local(fonts/OpenSans-LightItalic.woff) format('woff');
+src: local(fonts/OpenSans-LightItalic.svg) format('svg');
+font-style: italic;
 }
 
 /* Navigation Bar */
@@ -105,11 +131,11 @@ body {
  padding-bottom: 1.429em;
  background-color: #ffffff;
  color: #000000;
- font-family: 'OpenSans-Light', sans-serif;
+ font-family: 'OpenSans-Light', 'OpenSans-LightItalic', 'OpenSans-Bold', sans-serif;
 }
  
 p {
- font-family: 'OpenSans-Light', sans-serif;
+ font-family: 'OpenSans-Light', 'OpenSans-LightItalic', 'OpenSans-Bold', sans-serif;
  font-size: 1.071em;
  line-height: 1.429em;
 }
